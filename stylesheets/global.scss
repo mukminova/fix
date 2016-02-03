@@ -18,12 +18,13 @@ $img-path: '../../img/';
   flex: 1;
   display: flex;
   flex-direction: column;
+  max-width: 630px;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
   .site-content {
     width: 630px;
-    margin: 0 auto;
   }
 }
 
