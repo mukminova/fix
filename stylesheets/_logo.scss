@@ -1,0 +1,16 @@
+.logo {
+  text-align: center;
+  .logo__img {
+    width: 100%;
+    max-width: 345px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo{
+    text-align: right;
+    .logo__img{
+      margin: 0 10px 0 0;
+    }
+  }
+}

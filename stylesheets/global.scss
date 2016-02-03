@@ -1,0 +1,28 @@
+$img-path: '../../img/';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.site {
+  min-width: 320px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background: url($img-path + 'background.jpg') repeat;
+}
+
+.site-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .site-content {
+    width: 612px;
+    margin: 119px auto 0;
+  }
+}

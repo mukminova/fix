@@ -1,0 +1,10 @@
+.bottom-bg {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .bottom-bg {
+    display: block;
+    text-align: center;
+  }
+}

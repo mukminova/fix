@@ -1,0 +1,151 @@
+.box-content {
+  position: relative;
+  padding: 3px 10px;
+  flex: 1;
+  background: #fff;
+
+  .box-content__tag-line {
+    text-align: center;
+    margin-bottom: 51px;
+
+    h1 {
+      font-size: 30px;
+      font-weight: normal;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: normal;
+    }
+
+    .box-content__tag-line-link {
+      color: #970f06;
+      text-decoration: none;
+    }
+  }
+
+  .box-content__btn-wrapper {
+    padding: 5px;
+    border: 1px dashed #757700;
+    border-radius: 5px;
+
+    .box-content__btn {
+      background: #909300;
+      color: #fff;
+      border-radius: 5px;
+      padding: 11px 20px;
+      font-size: 28px;
+      border: none;
+      outline: none;
+      text-transform: uppercase;
+      width: 100%;
+
+      .box-content__btn-icon {
+        background: url($img-path + 'btnbox.png') no-repeat;
+        width: 51px;
+        height: 65px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .box-content__bg {
+    display: none;
+  }
+}
+
+@media (min-width: 480px) {
+  .box-content {
+
+    &:before, &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 10;
+    }
+
+    &:before {
+      background: url($img-path + 'pizza.png') no-repeat;
+      width: 129px;
+      height: 85px;
+      bottom: -75px;
+      left: 9px;
+    }
+
+    &:after {
+      background: url($img-path + 'cheese.png') no-repeat;
+      width: 104px;
+      height: 79px;
+      bottom: -68px;
+      right: 10px;
+    }
+
+    .box-content__bg {
+      display: block;
+      width: 140px;
+      position: absolute;
+      top: -30px;
+      left: -20px;
+    }
+
+    .box-content__tag-line {
+      text-align: right;
+      padding-left: 140px;
+    }
+
+    .box-content__btn {
+
+      .box-content__btn-icon {
+        display: inline-block;
+        margin: 3px -3px 0 0;
+      }
+
+      span {
+        vertical-align: 21px;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .box-content {
+    &:after {
+      bottom: -58px;
+      right: -37px;
+    }
+
+    .box-content__tag-line {
+      h1 {
+        font-size: 28px;
+      }
+
+      h2 {
+        font-size: 22px;
+      }
+    }
+
+    .box-content__bg {
+      width: 200px;
+      top: -35px;
+      left: -20px;
+    }
+
+    .box-content__btn-wrapper {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .box-content {
+    .box-content__bg {
+      width: 344px;
+      top: -124px;
+      left: -77px;
+    }
+  }
+}
+
+
+
