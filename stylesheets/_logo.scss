@@ -1,15 +1,28 @@
 .logo {
-  text-align: center;
+  margin-bottom: -3px;
   .logo__img {
-    width: 100%;
+    width: 95%;
     max-width: 345px;
+    margin-left: 3px;
   }
 }
 
-@media (min-width: 1024px) {
-  .logo{
+@media (min-width: 480px) {
+  .logo {
+    margin-bottom: 3px;
+    text-align: center;
+
+    .logo__img {
+      margin: 0 10px 0 0;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .logo {
     text-align: right;
-    .logo__img{
+    margin-right: 9px;
+    .logo__img {
       margin: 0 10px 0 0;
     }
   }

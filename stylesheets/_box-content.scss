@@ -1,51 +1,26 @@
 .box-content {
   position: relative;
-  padding: 3px 10px;
   flex: 1;
   background: #fff;
 
   .box-content__tag-line {
     text-align: center;
-    margin-bottom: 51px;
+    margin-bottom: 20px;
+    margin-top: 5px;
 
     h1 {
-      font-size: 30px;
+      font-size: 24px;
       font-weight: normal;
     }
 
     h2 {
-      font-size: 24px;
+      font-size: 20px;
       font-weight: normal;
     }
 
     .box-content__tag-line-link {
       color: #970f06;
       text-decoration: none;
-    }
-  }
-
-  .box-content__btn-wrapper {
-    padding: 5px;
-    border: 1px dashed #757700;
-    border-radius: 5px;
-
-    .box-content__btn {
-      background: #909300;
-      color: #fff;
-      border-radius: 5px;
-      padding: 11px 20px;
-      font-size: 28px;
-      border: none;
-      outline: none;
-      text-transform: uppercase;
-      width: 100%;
-
-      .box-content__btn-icon {
-        background: url($img-path + 'btnbox.png') no-repeat;
-        width: 51px;
-        height: 65px;
-        margin: 0 auto;
-      }
     }
   }
 
@@ -56,6 +31,7 @@
 
 @media (min-width: 480px) {
   .box-content {
+    padding: 0 15px;
 
     &:before, &:after {
       content: '';
@@ -68,41 +44,34 @@
       background: url($img-path + 'pizza.png') no-repeat;
       width: 129px;
       height: 85px;
-      bottom: -75px;
-      left: 9px;
+      bottom: -83px;
+      left: 8px;
+      background-size: 87px auto;
     }
 
     &:after {
       background: url($img-path + 'cheese.png') no-repeat;
       width: 104px;
       height: 79px;
-      bottom: -68px;
-      right: 10px;
+      bottom: -72px;
+      right: -13px;
+      background-size: 70px auto;
     }
 
     .box-content__bg {
       display: block;
-      width: 140px;
+      width: 147px;
       position: absolute;
-      top: -30px;
-      left: -20px;
+      top: -34px;
+      left: -17px;
     }
 
     .box-content__tag-line {
       text-align: right;
-      padding-left: 140px;
-    }
+      margin-bottom: 25px;
 
-    .box-content__btn {
-
-      .box-content__btn-icon {
-        display: inline-block;
-        margin: 3px -3px 0 0;
-      }
-
-      span {
-        vertical-align: 21px;
-        letter-spacing: 2px;
+      h1 {
+        font-size: 25px;
       }
     }
   }
@@ -113,26 +82,30 @@
     &:after {
       bottom: -58px;
       right: -37px;
+      background-size: auto;
+    }
+
+    &:before {
+      background-size: auto;
+      bottom: -76px;
     }
 
     .box-content__tag-line {
+      margin-top: 0;
+      margin-bottom: 30px;
       h1 {
-        font-size: 28px;
+        font-size: 25px;
       }
 
       h2 {
-        font-size: 22px;
+        font-size: 20px;
       }
     }
 
     .box-content__bg {
-      width: 200px;
-      top: -35px;
-      left: -20px;
-    }
-
-    .box-content__btn-wrapper {
-      margin-bottom: 40px;
+      width: 344px;
+      top: -119px;
+      left: -77px;
     }
   }
 }
@@ -140,9 +113,10 @@
 @media (min-width: 1024px) {
   .box-content {
     .box-content__bg {
-      width: 344px;
       top: -124px;
-      left: -77px;
+    }
+    .box-content__tag-line {
+      margin-bottom: 60px;
     }
   }
 }

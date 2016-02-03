@@ -4,11 +4,11 @@
   box-sizing: border-box; }
 
 .site {
-  min-width: 320px;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background: url("../../img/background.jpg") repeat; }
+  background: url("../../img/background.jpg") repeat;
+  font-family: sans-serif, Arial, Tahoma; }
 
 .site-content {
   flex: 1;
@@ -17,11 +17,15 @@
 
 @media (min-width: 768px) {
   .site-content {
-    width: 612px;
-    margin: 119px auto 0; } }
+    width: 630px;
+    margin: 0 auto; } }
+
+@media (min-width: 1024px) {
+  .site-content {
+    margin: 120px auto 0; } }
 
 .box {
-  padding: 5px; }
+  padding-right: 12px; }
   .box .box__top {
     display: flex;
     height: 18px; }
@@ -70,29 +74,40 @@
 
 @media (min-width: 480px) {
   .box {
-    margin-bottom: 50px; } }
+    margin-bottom: 6px;
+    padding: 0 15px; } }
 
 @media (min-width: 768px) {
   .box {
-    margin-bottom: 0px; } }
+    margin-bottom: 0; } }
 
 .header {
   background: url("../../img/top.jpg") repeat-x;
   height: 36px;
-  line-height: 30px;
+  line-height: 34px;
   text-align: center;
   color: #fff;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 12px; }
 
 .logo {
-  text-align: center; }
+  margin-bottom: -3px; }
   .logo .logo__img {
-    width: 100%;
-    max-width: 345px; }
+    width: 95%;
+    max-width: 345px;
+    margin-left: 3px; }
 
-@media (min-width: 1024px) {
+@media (min-width: 480px) {
   .logo {
-    text-align: right; }
+    margin-bottom: 3px;
+    text-align: center; }
+    .logo .logo__img {
+      margin: 0 10px 0 0; } }
+
+@media (min-width: 768px) {
+  .logo {
+    text-align: right;
+    margin-right: 9px; }
     .logo .logo__img {
       margin: 0 10px 0 0; } }
 
@@ -103,124 +118,160 @@
 
 .box-content {
   position: relative;
-  padding: 3px 10px;
   flex: 1;
   background: #fff; }
   .box-content .box-content__tag-line {
     text-align: center;
-    margin-bottom: 51px; }
+    margin-bottom: 20px;
+    margin-top: 5px; }
     .box-content .box-content__tag-line h1 {
-      font-size: 30px;
+      font-size: 24px;
       font-weight: normal; }
     .box-content .box-content__tag-line h2 {
-      font-size: 24px;
+      font-size: 20px;
       font-weight: normal; }
     .box-content .box-content__tag-line .box-content__tag-line-link {
       color: #970f06;
       text-decoration: none; }
-  .box-content .box-content__btn-wrapper {
-    padding: 5px;
-    border: 1px dashed #757700;
-    border-radius: 5px; }
-    .box-content .box-content__btn-wrapper .box-content__btn {
-      background: #909300;
-      color: #fff;
-      border-radius: 5px;
-      padding: 11px 20px;
-      font-size: 28px;
-      border: none;
-      outline: none;
-      text-transform: uppercase;
-      width: 100%; }
-      .box-content .box-content__btn-wrapper .box-content__btn .box-content__btn-icon {
-        background: url("../../img/btnbox.png") no-repeat;
-        width: 51px;
-        height: 65px;
-        margin: 0 auto; }
   .box-content .box-content__bg {
     display: none; }
 
 @media (min-width: 480px) {
-  .box-content:before, .box-content:after {
-    content: '';
-    display: block;
-    position: absolute;
-    z-index: 10; }
-  .box-content:before {
-    background: url("../../img/pizza.png") no-repeat;
-    width: 129px;
-    height: 85px;
-    bottom: -75px;
-    left: 9px; }
-  .box-content:after {
-    background: url("../../img/cheese.png") no-repeat;
-    width: 104px;
-    height: 79px;
-    bottom: -68px;
-    right: 10px; }
-  .box-content .box-content__bg {
-    display: block;
-    width: 140px;
-    position: absolute;
-    top: -30px;
-    left: -20px; }
-  .box-content .box-content__tag-line {
-    text-align: right;
-    padding-left: 140px; }
-  .box-content .box-content__btn .box-content__btn-icon {
-    display: inline-block;
-    margin: 3px -3px 0 0; }
-  .box-content .box-content__btn span {
-    vertical-align: 21px;
-    letter-spacing: 2px; } }
+  .box-content {
+    padding: 0 15px; }
+    .box-content:before, .box-content:after {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 10; }
+    .box-content:before {
+      background: url("../../img/pizza.png") no-repeat;
+      width: 129px;
+      height: 85px;
+      bottom: -83px;
+      left: 8px;
+      background-size: 87px auto; }
+    .box-content:after {
+      background: url("../../img/cheese.png") no-repeat;
+      width: 104px;
+      height: 79px;
+      bottom: -72px;
+      right: -13px;
+      background-size: 70px auto; }
+    .box-content .box-content__bg {
+      display: block;
+      width: 147px;
+      position: absolute;
+      top: -34px;
+      left: -17px; }
+    .box-content .box-content__tag-line {
+      text-align: right;
+      margin-bottom: 25px; }
+      .box-content .box-content__tag-line h1 {
+        font-size: 25px; } }
 
 @media (min-width: 768px) {
   .box-content:after {
     bottom: -58px;
-    right: -37px; }
-  .box-content .box-content__tag-line h1 {
-    font-size: 28px; }
-  .box-content .box-content__tag-line h2 {
-    font-size: 22px; }
+    right: -37px;
+    background-size: auto; }
+  .box-content:before {
+    background-size: auto;
+    bottom: -76px; }
+  .box-content .box-content__tag-line {
+    margin-top: 0;
+    margin-bottom: 30px; }
+    .box-content .box-content__tag-line h1 {
+      font-size: 25px; }
+    .box-content .box-content__tag-line h2 {
+      font-size: 20px; }
   .box-content .box-content__bg {
-    width: 200px;
-    top: -35px;
-    left: -20px; }
-  .box-content .box-content__btn-wrapper {
-    margin-bottom: 40px; } }
+    width: 344px;
+    top: -119px;
+    left: -77px; } }
 
 @media (min-width: 1024px) {
   .box-content .box-content__bg {
-    width: 344px;
-    top: -124px;
-    left: -77px; } }
+    top: -124px; }
+  .box-content .box-content__tag-line {
+    margin-bottom: 60px; } }
 
 .best-thing {
   display: none; }
 
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .best-thing {
+    margin: 10px 20px 15px;
     display: flex;
-    justify-content: space-between;
-    margin: 10px 10px 15px; }
+    justify-content: space-between; }
     .best-thing .best-thing__items {
-      background: #000;
-      opacity: 0.3;
-      padding: 15px;
+      position: relative;
+      z-index: 1;
+      width: 100px;
+      padding: 5px;
+      text-align: center;
       list-style: none;
       border-radius: 5px;
-      position: relative;
-      z-index: 1; }
-      .best-thing .best-thing__items .best-thing__items-bg {
-        text-align: center; }
+      background: #000;
+      opacity: .3; }
       .best-thing .best-thing__items .best-thing__items-name {
         color: #a5a5a5;
-        font-size: 13px; } }
+        font-size: 10px;
+        margin-top: -5px; } }
+
+@media (min-width: 768px) {
+  .best-thing .best-thing__items {
+    margin-top: 6px;
+    width: 140px;
+    padding: 15px 0; }
+    .best-thing .best-thing__items .best-thing__items-name {
+      font-size: 12px;
+      margin-top: 2px; } }
 
 .bottom-bg {
   display: none; }
 
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .bottom-bg {
     display: block;
+    text-align: center; } }
+
+.read-recipe {
+  padding: 5px;
+  border: 1px dashed #757700;
+  border-radius: 5px; }
+  .read-recipe .read-recipe__btn {
+    background: #909300;
+    border-radius: 5px;
+    padding: 11px 12px;
+    border: none;
+    outline: none;
+    width: 100%; }
+    .read-recipe .read-recipe__btn .read-recipe__btn-icon {
+      background: url("../../img/btnbox.png") no-repeat;
+      width: 51px;
+      height: 53px;
+      margin: 0 auto;
+      background-size: 42px auto; }
+    .read-recipe .read-recipe__btn span {
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 22px;
+      color: #fff; }
+
+@media (min-width: 480px) {
+  .read-recipe .read-recipe__btn {
+    text-align: left;
+    padding: 15px 32px; }
+    .read-recipe .read-recipe__btn .read-recipe__btn-icon {
+      display: inline-block;
+      margin: 0 6px 0 0;
+      background-size: auto;
+      height: 65px; }
+    .read-recipe .read-recipe__btn span {
+      vertical-align: 21px;
+      font-size: 27px; } }
+
+@media (min-width: 768px) {
+  .read-recipe .read-recipe__btn {
     text-align: center; } }
