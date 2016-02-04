@@ -11,7 +11,9 @@
     outline: none;
     width: 100%;
 
-    .read-recipe__btn-icon {
+    &:before {
+      content: "";
+      display: block;
       background: url($img-path + 'btnbox.png') no-repeat;
       width: 51px;
       height: 53px;
@@ -34,7 +36,8 @@
       text-align: left;
       padding: 15px 32px;
 
-      .read-recipe__btn-icon {
+      &:before {
+        content: "";
         display: inline-block;
         margin: 0 6px 0 0;
         background-size: auto;
